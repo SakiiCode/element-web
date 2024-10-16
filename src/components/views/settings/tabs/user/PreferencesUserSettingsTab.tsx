@@ -345,6 +345,7 @@ export default class PreferencesUserSettingsTab extends React.Component<IProps, 
                                 appName: SdkConfig.get().brand,
                             })}
                         />
+                        <SettingsFlag name="Electron.monochromeIcon" level={SettingLevel.PLATFORM} hideIfCannotSet />
                         <SettingsFlag name="Electron.alwaysShowMenuBar" level={SettingLevel.PLATFORM} hideIfCannotSet />
                         <SettingsFlag name="Electron.autoLaunch" level={SettingLevel.PLATFORM} hideIfCannotSet />
                         <SettingsFlag name="Electron.warnBeforeExit" level={SettingLevel.PLATFORM} hideIfCannotSet />
