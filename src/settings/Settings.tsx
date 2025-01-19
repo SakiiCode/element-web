@@ -343,6 +343,7 @@ export interface Settings {
     "Electron.alwaysShowMenuBar": IBaseSetting<boolean>;
     "Electron.showTrayIcon": IBaseSetting<boolean>;
     "Electron.enableHardwareAcceleration": IBaseSetting<boolean>;
+    "Electron.monochromeIcon": IBaseSetting<boolean>;
 }
 
 export type SettingKey = keyof Settings;
@@ -1352,6 +1353,6 @@ export const SETTINGS: Settings = {
     "Electron.monochromeIcon": {
         supportedLevels: [SettingLevel.PLATFORM],
         displayName: _td("settings|preferences|monochrome_icon"),
-        default: process.platform === "linux",
+        default: false,
     },
 };
